@@ -1,0 +1,55 @@
+
+###
+
+POST http://localhost:8000/api/auth/register
+Content-Type: application/json
+
+{
+  "username": "loc",
+  "password": "123"
+}
+
+###
+
+POST http://localhost:8000/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "loc",
+  "password": "123"
+}
+###
+
+
+POST http://localhost:8000/api/post
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTM4NWIwZmExNzhmNzQzNTdiNjUxOTciLCJpYXQiOjE2MzEyMDIzMzZ9.XB89k1ipmp0bxG29xNCFFb_ABmttGrMa0z3ZKQ3gLmU
+
+{
+  "title": "React 123",
+  "description": "React",
+  "url": "Shoppe.com",
+  "status": "TO LEARN"
+}
+
+###
+
+GET http://localhost:8000/api/post
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTM4NWIwZmExNzhmNzQzNTdiNjUxOTciLCJpYXQiOjE2MzEwODY1OTR9.R120-8gwWqpUyLAL9rsu2kg-oD97GtggTt-LVBinWqA
+###
+
+PUT http://localhost:8000/api/post/6138768b3755a1dd8d961b24
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTM4NWIwZmExNzhmNzQzNTdiNjUxOTciLCJpYXQiOjE2MzEwODY1OTR9.R120-8gwWqpUyLAL9rsu2kg-oD97GtggTt-LVBinWqA
+
+{
+  "title": "Vudde",
+  "description": "VUEEEEE",
+  "url": "https://vuejs.org",
+  "status": "LEARNING"
+}
+
+###
+
+DELETE http://localhost:8000/api/post/6138680d8df4f93570a6cd35
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTM4NWIwZmExNzhmNzQzNTdiNjUxOTciLCJpYXQiOjE2MzEwODY1OTR9.R120-8gwWqpUyLAL9rsu2kg-oD97GtggTt-LVBinWqA
